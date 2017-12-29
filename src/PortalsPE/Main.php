@@ -70,7 +70,7 @@ class Main extends PluginBase{
         return false;
     }
 
-    public function onCommand(CommandSender $sender, Command $command, $label, array $args){
+    public function onCommand(CommandSender $sender, Command $command, string $label, array $args): bool{
         if(strtolower($command->getName()) === "portal"){
             if(!isset($args[0])){
                 return false;
